@@ -1,3 +1,6 @@
+# Copyright (c) 2021 Azhaan Salam
+# Licensed under the MIT License
+
 from time import time, sleep
 from sys import argv
 from string import ascii_letters, digits, punctuation
@@ -24,6 +27,7 @@ def main():
 
 
 def crackpass(password, length, printable):
+    # Credits to https://github.com/dmalan/cybersecurity/blob/master/crack4.py
     for passcode in product(ascii_letters + digits + punctuation, repeat=length):
         if printable:
             print("".join(passcode))    
