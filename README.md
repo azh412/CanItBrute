@@ -4,7 +4,8 @@ A cybersecurity tool to show how vulnerable your passwords can be, using the cla
 # Setup
 
 1. Be sure you have Python, (3.8 recommended).
-
+   **This project does not support Python 2**
+   
 2. Clone this repository via your terminal
 
 3. Run the program by executing `python3 CanItBrute.py`

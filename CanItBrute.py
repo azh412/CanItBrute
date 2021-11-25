@@ -8,6 +8,9 @@ from itertools import product
 def main():
     print("Welcome to CanItBrute! Run with a command-line argument to see the different combinations being tried!")
     password = input("Password: ")
+    while password == "":
+        print("Please enter a password!")
+        password = input("Password: ")
     length = 0
     results = False
     printable = False
